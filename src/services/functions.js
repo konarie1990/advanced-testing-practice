@@ -6,8 +6,15 @@
   if counter === times, call theFunc()
   return the theAfter 
  */
-export function after(times, theFunc){
-
+export function after(times, theFunc) {
+  let counter = 0;
+  const theAfter = () => {
+    counter += 1;
+    if (counter === times) {
+      theFunc();
+    }
+  };
+  return theAfter;
 }
 
 /*
@@ -18,10 +25,16 @@ export function after(times, theFunc){
   if counter <= times, call theFunc()
   return the theBefore 
  */
-export function before(times, theFunc){
-
+export function before(times, theFunc) {
+  let counter = 0;
+  const theBefore = () => {
+    counter += -1;
+    if (counter <= times) {
+      theFunc();
+    }
+  };
+  return theBefore;
 }
-
 /*
 Creates a function that is restricted to invoking theFunc once. 
 Repeat calls to the function return the value of the first invocation.
@@ -32,6 +45,14 @@ in theOnce check if firstValue is null,
 return firstValue
 return theOnce
  */
-export function once(theFunc){
-  
-}
+
+// *** SKIPPING theOnce ***
+// export function once(theFunc) {
+//   let firstValue = null;
+//   const theOnce = () => {
+//     if (firstValue === null) {
+//       firstValue = theFunc();
+//     }
+//   };
+//   return theOnce;
+// }
