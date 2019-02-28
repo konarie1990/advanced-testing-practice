@@ -15,13 +15,23 @@ beforeAll(() => {
   );
 });
 beforeEach(() => {
-  store.getState().currentCount = 0;
+  store.getState().UserButtonsContainer = 0;
 });
 
-describe("UserButtonContainer", () => {
+describe("Add User Button", () => {
   it("should increase users array length by 1", () => {
     let increaseButton = wrapper.find("button").at(0);
+    expect(myFunc.mock.calls.length).toBe();
     increaseButton.simulate("click");
-    expect(store.getState().currentCount).toBe();
+    expect(store.getState().currentCount).toBe(currentCount + 1);
+  });
+});
+
+describe("Remove User Button", () => {
+  it("should decrease users array length by 1", () => {
+    let increaseButton = wrapper.find("button").at(0);
+    expect(myFunc.mock.calls.length).toBe();
+    increaseButton.simulate("click");
+    expect(store.getState().currentCount.length).toBe(currentCount - 1);
   });
 });

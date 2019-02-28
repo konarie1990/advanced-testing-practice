@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import CounterButtonContainer from "./containers/CounterButtonContainer";
 import SpecialTextBoxContainer from "./containers/SpecialTextBoxContainer";
 import CounterContainer from "./containers/CounterContainer";
@@ -19,47 +19,45 @@ import ShowModalContainer from "./containers/ShowModalContainer";
 
 function App() {
   return (
-      <div className="App">
-        <div className="container">
-          <CounterButtonContainer />
-          <br />
-          <SpecialTextBoxContainer />
-          <br />
-          <UserButtonsContainer />
-          <br />
-          <CityDropDownContainer />
-           <br />
-          <ChangeTemperatureContainer />
-          <br />
-          <SearchTextBoxContainer />
-          <br />
-          <VideoTextBoxContainer />
-          <br />
-          <SortUsersContainer />
-          <br />
-          <ScaleVideoContainer />
-          <br />
-          <ShowModalContainer />
-        </div>
-        <div className="container">
-          <CounterContainer />
-          <br />
-          <SpecialTextContainer />
-          <br />
-          <CurrentCityContainer />
-          <br />
-          <ThermostatContainer />
-          <br />
-          <VideoPlayerContainer />
-          <br />
-
-
-        </div>
-        <div className="container">
-          <UsersContainer />
-        </div>
-        <ModalContainer />
+    <div className="App">
+      <div className="container">
+        <CounterButtonContainer />
+        <br />
+        <SpecialTextBoxContainer />
+        <br />
+        <UserButtonsContainer />
+        <br />
+        <CityDropDownContainer />
+        <br />
+        <ChangeTemperatureContainer />
+        <br />
+        <SearchTextBoxContainer />
+        <br />
+        <VideoTextBoxContainer />
+        <br />
+        <SortUsersContainer />
+        <br />
+        <ScaleVideoContainer />
+        <br />
+        <ShowModalContainer />
       </div>
+      <div className="container">
+        <CounterContainer />
+        <br />
+        <SpecialTextContainer />
+        <br />
+        <CurrentCityContainer />
+        <br />
+        <ThermostatContainer />
+        <br />
+        <VideoPlayerContainer />
+        <br />
+      </div>
+      <div className="container">
+        <UsersContainer />
+      </div>
+      <ModalContainer />
+    </div>
   );
 }
 export default App;
