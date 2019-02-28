@@ -53,6 +53,7 @@ return theOnce
 //     if (firstValue === null) {
 //       firstValue = theFunc();
 //     }
+//     return firstValue;
 //   };
 //   return theOnce;
 // }

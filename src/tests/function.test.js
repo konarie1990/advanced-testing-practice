@@ -34,12 +34,10 @@ describe("before", () => {
 // *** SKIPPING theOnce ***
 // describe("once", () => {
 //   it("should only call add once", () => {
-//     const myFunc = jest.fn();
+//     const theOnce = jest.fn();
 //     let myOnce = once(() => add(4, 5));
 //     myOnce();
 //     myOnce();
-//     myOnce();
-//     myOnce();
-//     expect(myFunc.mock.calls.length).toBe(4);
+//     expect(myFunc.mock.calls.length).toBe(1);
 //   });
 // });
