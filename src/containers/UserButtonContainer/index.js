@@ -18,4 +18,5 @@ const UserButtonsContainer = connect(
   null,
   mapDispatchToProps
 )(UserButtons);
+
 export default UserButtonsContainer;
